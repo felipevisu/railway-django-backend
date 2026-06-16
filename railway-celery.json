@@ -4,6 +4,6 @@
         "builder": "RAILPACK"
     },
     "deploy": {
-        "startCommand": "celery -A config worker -B -l info"
+        "startCommand": "celery -A config worker -B -l info --concurrency=2"
     }
 }
